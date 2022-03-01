@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instagram Reels</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <meta charset="UTF-8">
+
+    <meta property="og:title" content="Projects ~ Annie Wu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://anniew.xyz/projects" />
+    <meta property="og:description" content="Here is a showcase of the projects I have worked on with languages and tools including HTML, CSS, JavaScript, React, Python, Firebase, Amazon Web Services, and Google Cloud Platform." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://anniew.xyz/img/me-icon-smiling.png" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projects ~ Annie Wu">
+    <meta name="twitter:description" content="Here is a showcase of the projects I have worked on with languages and tools including HTML, CSS, JavaScript, React, Python, Firebase, Amazon Web Services, and Google Cloud Platform.">
+    <meta name="twitter:image" content="https://anniew.xyz/img/me-icon-smiling.png">
+    <meta name="twitter:site" content="@anniedotexe">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Annie Wu">
+    <meta name="description" content="Here is a showcase of the projects I have worked on with languages and tools including HTML, CSS, JavaScript, React, Python, Firebase, Amazon Web Services, and Google Cloud Platform.">
+    <meta name="keywords" content="Annie Wu, Annie Wu Portfolio, Annie Wu Photography, photographer, developer, java, python, html, css, javascript, web developer, webdev, portfolio">
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="canonical" href="https://anniew.xyz/projects" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/header.css" type="text/css">
+    <link rel="stylesheet" href="./css/projects.css" type="text/css">
+    <link rel="stylesheet" href="./css/footer.css" type="text/css">
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row>.column {
+            padding: 0 8px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+        /* Modal Content */
+        
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 70%;
+            max-width: 1200px;
+        }
+        /* The Close Button */
+        
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .mySlides1 {
+            display: none;
+        }
+        
+        .mySlides2 {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        img {
+            margin-bottom: -4px;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .demo1 {
+            opacity: 0.6;
+        }
+        
+        .demo2 {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+        
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="main-container project-section">
+        <section class="projects">
+            <div class="page-title">
+                <h1>Instagram<span class="pink"> Reels</span></h1>
+            </div>
+            <p class="section-description">
+                Instagram reels made using Canva and Illustrator<br>
+            </p>
+            <div class="project-cards-container">
+
+                <!--FIRST POST-->
+                <div class="card">
+                    <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                        <source src="./imgs/reels/reel1.mp4" type="video/mp4"
+                            alt="Project Preview Screenshot" class="card-preview-img" ></video>
+                    <div class="card-info" width=80%>
+                        <div class="title-and-links">
+                            <span class="project-title">
+                                   Weekly stories and reels
+                                </span>
+                            <div class="project-links">
+                                <a href="#">
+                                    <i class="fas fa-external-link-alt cursor" onclick="openModal1();currentSlide1(1)"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--  <p class="project-description">
+                            How to do articles
+                        </p> -->
+                    </div>
+                </div>
+
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal1()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1_1.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1_2.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1_3.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide1(1)"></video>
+                        </div>
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1_1.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide1(2)"></video>
+                        </div>
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1_2.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide1(3)"></video>
+                        </div>
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel1_3.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide1(4)"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openModal1() {
+                        document.getElementById("myModal").style.display = "block";
+                    }
+
+                    function closeModal1() {
+                        document.getElementById("myModal").style.display = "none";
+                    }
+
+                    var slideIndex = 1;
+                    showSlides1(slideIndex);
+
+                    function plusSlides1(n) {
+                        showSlides1(slideIndex += n);
+                    }
+
+                    function currentSlide1(n) {
+                        showSlides1(slideIndex = n);
+                    }
+
+                    function showSlides1(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+                <!-- first post end -->
+
+                <!--SECOND POST-->
+                <div class="card">
+                    <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                        <source src="./imgs/reels/reel2.mp4" type="video/mp4"
+                            alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                    <div class="card-info" width=80%>
+                        <div class="title-and-links">
+                            <span class="project-title">
+                             Motivational monthly stories and reels
+                          </span>
+                            <div class="project-links">
+                                <a href="#">
+                                    <i class="fas fa-external-link-alt cursor" onclick="openModal2();currentSlide2(1)"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <p class="project-description">
+                            How to do articles
+                        </p> -->
+                    </div>
+                </div>
+
+
+                <div id="myModal1" class="modal">
+                    <span class="close cursor" onclick="closeModal2()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides2">
+                            <div class="numbertext">1 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">2 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2_1.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">3 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2_2.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                        </div>
+
+                        <div class="mySlides2">
+                            <div class="numbertext">4 / 4</div>
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2_3.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption2"></p>
+                        </div>
+
+
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                        </div>
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2_1.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(2)"></video>
+                        </div>
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2_2.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(3)"></video>
+                        </div>
+                        <div class="column">
+                            <video height=80% width=80% loop="true" autoplay="autoplay" muted>
+                                <source src="./imgs/reels/reel2_3.mp4" type="video/mp4"
+                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(4)"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function openModal2() {
+                        document.getElementById("myModal1").style.display = "block";
+                    }
+
+                    function closeModal2() {
+                        document.getElementById("myModal1").style.display = "none";
+                    }
+
+                    var slideIndex = 1;
+                    showSlides2(slideIndex);
+
+                    function plusSlides2(n) {
+                        showSlides2(slideIndex += n);
+                    }
+
+                    function currentSlide2(n) {
+                        showSlides2(slideIndex = n);
+                    }
+
+                    function showSlides2(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides2");
+                        var dots = document.getElementsByClassName("demo2");
+                        var captionText = document.getElementById("caption2");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+                <!-- second post End -->
+            </div>
+            </div>
+            <!--FIFTH POST END-->
+            </div>
+        </section>
+    </main>
+    <br><br><br>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
