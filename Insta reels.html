@@ -22,12 +22,7 @@
     <meta name="twitter:site" content="@anniedotexe">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="copyright" content="Annie Wu">
-    <meta name="description" content="Here is a showcase of the projects I have worked on with languages and tools including HTML, CSS, JavaScript, React, Python, Firebase, Amazon Web Services, and Google Cloud Platform.">
-    <meta name="keywords" content="Annie Wu, Annie Wu Portfolio, Annie Wu Photography, photographer, developer, java, python, html, css, javascript, web developer, webdev, portfolio">
-    <meta name="robots" content="noindex, nofollow" />
 
-    <link rel="canonical" href="https://anniew.xyz/projects" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,6 +102,7 @@
         }
         
         .mySlides {
+            height: 50%;
             display: none;
         }
         
@@ -115,6 +111,14 @@
         }
         
         .mySlides2 {
+            display: none;
+        }
+        
+        .mySlides3 {
+            display: none;
+        }
+        
+        .mySlides4 {
             display: none;
         }
         
@@ -184,8 +188,25 @@
             opacity: 0.6;
         }
         
+        .demo3 {
+            opacity: 0.6;
+        }
+        
+        .demo4 {
+            opacity: 0.6;
+        }
+        
+        .demo5 {
+            opacity: 0.6;
+        }
+        
         .active,
-        .demo:hover {
+        .demo :hover,
+        .demo1 :hover,
+        .demo2 :hover,
+        .demo3 :hover,
+        .demo4 :hover,
+        .demo5 :hover {
             opacity: 1;
         }
         
@@ -220,7 +241,7 @@
                     <div class="card-info" width=80%>
                         <div class="title-and-links">
                             <span class="project-title">
-                                   Weekly stories and reels
+                                Weekly stories and reels
                                 </span>
                             <div class="project-links">
                                 <a href="#">
@@ -228,8 +249,8 @@
                                 </a>
                             </div>
                         </div>
-                        <!--  <p class="project-description">
-                            How to do articles
+                        <!--    <p class="project-description">
+                            How to do articles made using Adobe XD.
                         </p> -->
                     </div>
                 </div>
@@ -267,6 +288,8 @@
                                     alt="Project Preview Screenshot" class="card-preview-img" ></video>
                         </div>
 
+
+
                         <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides1(1)">&#10095;</a>
 
@@ -295,6 +318,7 @@
                                 <source src="./imgs/reels/reel1_3.mp4" type="video/mp4"
                                     alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide1(4)"></video>
                         </div>
+
                     </div>
                 </div>
 
@@ -346,11 +370,11 @@
                 <div class="card">
                     <video height=80% width=80% loop="true" autoplay="autoplay" muted>
                         <source src="./imgs/reels/reel2.mp4" type="video/mp4"
-                            alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                            alt="Project Preview Screenshot" class="card-preview-img demo cursor"></video>
                     <div class="card-info" width=80%>
                         <div class="title-and-links">
                             <span class="project-title">
-                             Motivational monthly stories and reels
+                                Motivational monthly stories and reels
                           </span>
                             <div class="project-links">
                                 <a href="#">
@@ -358,8 +382,8 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- <p class="project-description">
-                            How to do articles
+                        <!--  <p class="project-description">
+                            Athlete story cover designs made using Illustrator.
                         </p> -->
                     </div>
                 </div>
@@ -373,28 +397,28 @@
                             <div class="numbertext">1 / 4</div>
                             <video height=80% width=80% loop="true" autoplay="autoplay" muted>
                                 <source src="./imgs/reels/reel2.mp4" type="video/mp4"
-                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
                         </div>
 
                         <div class="mySlides2">
                             <div class="numbertext">2 / 4</div>
                             <video height=80% width=80% loop="true" autoplay="autoplay" muted>
                                 <source src="./imgs/reels/reel2_1.mp4" type="video/mp4"
-                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
                         </div>
 
                         <div class="mySlides2">
                             <div class="numbertext">3 / 4</div>
                             <video height=80% width=80% loop="true" autoplay="autoplay" muted>
                                 <source src="./imgs/reels/reel2_2.mp4" type="video/mp4"
-                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
                         </div>
 
                         <div class="mySlides2">
                             <div class="numbertext">4 / 4</div>
                             <video height=80% width=80% loop="true" autoplay="autoplay" muted>
                                 <source src="./imgs/reels/reel2_3.mp4" type="video/mp4"
-                                    alt="Project Preview Screenshot" class="card-preview-img demo cursor"  onclick="currentSlide2(1)"></video>
+                                    alt="Project Preview Screenshot" class="card-preview-img" ></video>
                         </div>
 
                         <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
@@ -471,6 +495,9 @@
                     }
                 </script>
                 <!-- second post End -->
+
+
+
             </div>
             </div>
             <!--FIFTH POST END-->
@@ -480,6 +507,7 @@
     <br><br><br>
 
     <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
